@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+        <title>Halovaksin</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="includedContent"></div>
+        <br /><br />
+        <div class="container"></div>
+        <div class="beranda">
+            <h1 style="max-width: 400px; text-align: left">Your Health Is Our Priority</h1>
+            <p class="p1">Halovaksin adalah aplikasi yang dikembangkan untuk membantu instansi pemerintah terkait dalam melakukan pelacakan untuk menghentikan penyebaran Coronavirus Disease (COVID-19).</p>
+            <p class="p2">Kami peduli dengan Anda dafar vaksin COVID-19 untuk pencegahan.</p>
+            <a href="listvaksin.html"><button class="pendaftaran">PENDAFTARAN VAKSINASI &#8594;</button></a>
+        </div>
+
+        <div class="beranda2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 area py-5">
+                        <h4 class="m-3">Silahkan cek status vaksin dan warna label anda!</h4>
+                        <div class="d-flex flex-row bd-highlight mb-3 kotak">
+                            <div class="col-4 px-3">
+                                <p>Nama Lengkap</p>
+                                <input type="text" class="form-control shadow" />
+                            </div>
+                            <div class="col-4 px-3">
+                                <p>NIK</p>
+                                <input type="text" class="form-control shadow" />
+                            </div>
+                            <div class="col-3 position-relative">
+                                <a href="statusvaksin.html"><button class="shadow btn btn-warning position-absolute bottom-0 end-0">Cek Disini &#8594;</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pt-5 text-center pb-4">
+                        <img src="img/banner-wecare-3 1.png" width="350px" class="rounded" />
+                        <br /><br />
+                        <h4 style="font-weight: bold" class="text-warning">Peduli dengan Keluarga Kesayangan Anda</h4>
+                    </div>
+                    <div class="col-4 pt-5 text-center pb-4">
+                        <img src="img/banner-wecare-2 1.png" width="350px" class="rounded" />
+                        <br /><br />
+                        <h4 style="font-weight: bold" class="text-warning">Notifikasi Keamanan</h4>
+                    </div>
+                    <div class="col-4 pt-5 text-center pb-4">
+                        <img src="img/banner-wecare-1 1.png" width="350px" class="rounded" />
+                        <br /><br />
+                        <h4 style="font-weight: bold" class="text-warning">Membantu Pelacakan untuk Menghentikan Penyebaran COVID-19</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4">
+            <div class="container">
+                <div class="p-3 mb-2 bg-warning text-dark rounded">
+                    <div class="row d-flex flex-row bd-highlight">
+                        <div class="col-6 py-auto">
+                            <h5 style="font-family: Poppins, sans-serif" class="py-3">Hey,Kamu <br />Udah vaksin belum?</h5>
+                        </div>
+                        <div class="col-6 text-center">
+                            <img src="img/emojione_church.png" class="rounded gambar" />
+
+                            <img src="img/emojione_hospital.png" class="rounded gambar" />
+
+                            <img src="img/noto_hospital.png" class="rounded gambar" />
+
+                            <img src="img/noto_office-building.png" class="rounded gambar" />
+                        </div>
+                        <div class="col-8">
+                            <h5 style="font-family: Poppins, sans-serif">Temukan Kotamu Disini!</h5>
+                            <div style="font-family: Poppins, sans-serif" class="input-group-mb-3">
+                                <select class="form-select" id="inputGroupSelect01">
+                                    <option selected></option>
+                                    <option value="1">Jakarta</option>
+                                    <option value="2">Tanggerang</option>
+                                    <option value="3">Bandung</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <h5 style="font-family: Poppins, sans-serif">Jenis Vaksin</h5>
+                            <div style="font-family: Poppins, sans-serif" class="input-group-mb-3">
+                                <select class="form-select" id="inputGroupSelect01">
+                                    <option selected></option>
+                                    <option value="1">AstraZeneca</option>
+                                    <option value="2">Sinovac</option>
+                                    <option value="3">Moderna</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br /><br /><br /><br />
+                        <div class="col-3 py-3"><a class="btn-temukan" href="listvaksin.html">Temukan VaksinMu!</a></div>
+                        <div class="position-relative">
+                            <div class="col-9 py-2">
+                                <img src="img/friend.png" width="170px" class="position-absolute bottom-0 end-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-4">
+                    <h4>Jakarta Barat</h4>
+                    <div class="row">
+                        <div class="col-4 pb-5">
+                            <a href="daftarvaksinsekarang.html" style="color: black">
+                                <div class="card position-relative" style="width: 18rem; height: 25rem">
+                                    <div class="card-body-light shadow">
+                                        <img src="img/riwayat1.png" class="card-img-top" width="100px" height="120" /><br /><br />
+                                        <h5 class="card-title">Rumah Sakit Pondok Indah - Puri Indah</h5>
+                                        <br />
+                                        <p class="card-text">Jalan Puri Indah Raya S-2, RT.1/RW.2, Kembangan Sel., Kec. Kembangan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11610</p>
+                                        <img src="./img/location.svg" alt="" srcset="" />&nbsp; Jakarta Barat<br />
+                                        <img src="./img/clock.svg" alt="" srcset="" />&nbsp; 21 Maret 2020 - 22 Maret 2022<br /><br />
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4 pb-5">
+                            <div class="card position-relative" style="width: 18rem; height: 25rem">
+                                <a href="daftarvaksinsekarang 2.html" style="color: black">
+                                    <div class="card-body-light shadow">
+                                        <img src="img/riwayat3.png" class="card-img-top" width="100px" height="120" /><br /><br />
+                                        <h5 class="card-title">Rumah Sakit Royal Taruma</h5>
+                                        <br />
+                                        <p class="card-text">Jl. Raya Daan Mogot Kedaung No.34, RT.8/RW.1, Kali Angke, Kec. Grogol petamburan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11470</p>
+                                        <img src="./img/location.svg" alt="" srcset="" />&nbsp; Jakarta Barat<br />
+                                        <img src="./img/clock.svg" alt="" srcset="" />&nbsp; 21 Maret 2020 - 22 Maret 2022<br /><br />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 pb-5">
+                            <div class="card position-relative" style="width: 18rem; height: 25rem">
+                                <a href="daftarvaksinsekarang 2.html" style="color: black">
+                                    <div class="card-body-light shadow">
+                                        <img src="img/riwayat3.png" class="card-img-top" width="100px" height="120" /><br /><br />
+                                        <h5 class="card-title">Rumah Sakit Royal Taruma</h5>
+                                        <br />
+                                        <p class="card-text">Jl. Raya Daan Mogot Kedaung No.34, RT.8/RW.1, Kali Angke, Kec. Grogol petamburan, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11470</p>
+                                        <img src="./img/location.svg" alt="" srcset="" />&nbsp; Jakarta Barat<br />
+                                        <img src="./img/clock.svg" alt="" srcset="" />&nbsp; 21 Maret 2020 - 22 Maret 2022<br /><br />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <a href="listvaksin.html" style="text-decoration: none" class="text-warning">View All -></a>
+                    <br /><br />
+                    <h4>Jakarta Selatan</h4>
+                    <div class="row py-4">
+                        <div class="col-4 pb-5">
+                            <div class="card position-relative" style="width: 18rem; height: 25rem">
+                                <a href="daftarvaksinsekarang3.html" style="color: black">
+                                    <div class="card-body-light shadow">
+                                        <img src="img/riwayat2.png" class="card-img-top" width="100px" height="120" /><br /><br />
+                                        <h5 class="card-title">RS Pertamina Bina Medika</h5>
+                                        <br />
+                                        <p class="card-text">4, Jl. Kyai Maja No.37B, RT.4/RW.8, Gunung, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12120</p>
+                                        <img src="./img/location.svg" alt="" srcset="" />&nbsp; Jakarta Selatan<br />
+                                        <img src="./img/clock.svg" alt="" srcset="" />&nbsp; 21 Maret 2020 - 22 Maret 2022<br /><br />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <a href="listvaksin.html" style="text-decoration: none" class="text-warning">View All -></a>
+                </div>
+                <div class="py-4">
+                    <div class="row">
+                        <div class="col-3 p">
+                            <img src="img/logo-halovaksin.png" style="width: 55%" />
+                        </div>
+                        <div class="col-9 my-3">
+                            <img src="img/image 3.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(function () {
+                $("#includedContent").load("navbar.html");
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <title>Status Vaksin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="includedContent"></div>
+    <div class="container">
+        <div class="status-container">
+            <div class="status-form m-auto">
+                <div class="status-title">
+                    <h4>Silahkan cek status vaksin dan warna label Anda!</h4>
+                </div>
+                <div class="status-textarea d-flex justify-content-between">
+                    <div class="mb-1">
+                        <label for="exampleFormControlTextarea1" class="form-label">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="name"></input>
+                      </div>
+                      <div class="mb-1">
+                        <label for="exampleFormControlInput1" class="form-label">NIK</label>
+                        <input type="email" class="form-control" id="NIK" />
+                      </div>
+                      <div class="save-btn mt-5">
+                        <button onclick="show()" class="btn btn-primary" type="submit" id="btn">Cek Disini</button>
+                      </div>
+                </div>
+            </div>
+            <div class="status-card-container">
+                <div class="status-card d-flex mt-5 flex-column">
+                    <div class="label-status d-flex flex-column mx-5 mt-5 mb-3 p-3">
+                        <div class="status-data">
+                            <h4>Status Vaksinasi</h4>
+                            <p class="name" id="name-output"></p>
+                            <p class="NIK" id="NIK-output"></p>
+                        </div>
+                        <div class="status d-flex">
+                            <img src="img/exclamation.png" width="25px" height="25px" class="me-2" alt="">
+                            <p>Belum Vaksinasi</p>
+                        </div>
+                    </div>
+                    <div class="info-vaksin mx-5">
+                        <div class="jadwal-vaksin-status d-flex justify-content-between">
+                            <h4>JADWAL VAKSINASI</h4>
+                            <div class="status d-flex">
+                                <img src="img/exclamation.png" width="25px" height="25px" class="me-2" alt="">
+                                <p style="color: red;">Belum Terjadwal</p>
+                            </div>
+                        </div>
+                        <div class="status-btn d-flex justify-content-between mb-2">
+                            <p>Segera daftarkan diri Anda dengan klik tombol berikut: </p>
+                        <li class="nav-item" style="text-decoration: none; list-style-type: none;">
+                            <a class="nav-link button-reglog p-2" href="listvaksin.html">Daftar Vaksinasi</a>
+                          </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <script>
+        const name = document.getElementById('name');
+        const NIK = document.getElementById('NIK');
+        const btn = document.getElementById('btn');
+        const nameOutput = document.getElementById('name-output');
+        const NIKOutput = document.getElementById('NIK-output');
+        const showCard = document.querySelector(".status-card-container");
+
+        function display(){
+            nameOutput.innerHTML = name.value;
+            NIKOutput.innerHTML = NIK.value;
+        }
+
+        function show(){
+            showCard.style.display = "block";
+        }
+
+        btn.addEventListener('click', display);
+    </script>
+    <script>
+            $(function () {
+                $("#includedContent").load("navbar.html");
+            });
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </body>
+</html>

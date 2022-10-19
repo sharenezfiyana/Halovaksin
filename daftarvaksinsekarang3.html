@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+        <title>Daftar Vaksin Sekarang</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="includedContent"></div>
+        <br /><br /><br /><br />
+        <div class="container" style="min-width: 1512px">
+            <div class="wrapperRiwayat d-grid" style="place-content: center">
+                <div class="wrapperRiwayat-2 d-block" style="max-width: 1200px">
+                    <div class="detailRiwayat d-flex">
+                        <div class="w-50"><img style="border-radius: 6px" class="w-100" src="./img/riwayat2.png" alt="" /></div>
+                        <div class="text-detail d-block">
+                            <h3 style="font-weight: 700px">RS Pertamina Bina Medika</h3>
+                            <p>J4, Jl. Kyai Maja No.37B, RT.4/RW.8, Gunung, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12120</p>
+                            <div class="location"><img src="./img/location.svg" alt="" srcset="" />&nbsp; Jakarta Barat</div>
+                            <div class="clock"><img src="./img/clock.svg" alt="" srcset="" />&nbsp; 22 Desember 2022 | 09:00 WIB</div>
+                            <br /><br />
+                            <div class="maps"><img src="./img/icons8-google-maps-48.png" height="30" alt="" srcset="" />&nbsp; <a style="text-decoration: none; color: black" href="https://www.google.com/maps/dir//rumah+sakit+pondok+indah/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x2e69f1a5749fd305:0x6d5b2c92cd82061b?sa=X&ved=2ahUKEwi0m8yI8Ib4AhWr63MBHbI8Dx4Q9Rd6BAhtEAU">Buka di Google Maps</a></div>
+                            <div class="d-grid d-md-flex justify-content-md-end">
+                                <button onclick="daftarVaksinBtn()" style="padding: 10px" class="btn btn-primary">Daftar Vaksinasi Sekarang</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="contentDetail d-block">
+                        <h6 style="color: red">*Syarat dan Ketentuan Berlaku</h6>
+                        <div class="pertanyaan" style="padding: 10px">
+                            <h6>Pertanyaan :</h6>
+                            <h6>halovaksin@kemkes.co.id <img src="./img/icons8-whatsapp.gif" height="30" alt="" /></h6>
+                        </div>
+                        <h4>Persyaratan dan Ketentuan :</h4>
+                        <div class="syarat" style="margin-left: 35px">
+                            1. Satu Identitas hanya berlaku untuk satu tiket vaksin.<br />
+                            2. Harap membawa kartu identitas asli/KTP dan bukti telah melakukan registrasi di Halovaksin.<br />
+                            3. Dilarang merekam dengan kamera profesional untuk kepentingan komersial.<br />
+                            4. Anak-anak dibawah 17 tahun harus dengan didampingi oleh orang tua atau orang dewasa.<br />
+                            5. Dilarang membawa minuman keras dan obat-obatan terlarang / narkotika / ganja. <br />
+                            6. Dilarang membuang sampah sembarangan.<br />
+                            7. Dilarang merokok di area vaksinasi.<br />
+                        </div>
+                        <br />
+                        <h6 style="font-weight: bold">SAYA TELAH MEMBACA DAN MEMAHAMI PERSYARATAN DAN KETENTUAN PEMBELIAN DAN PENGGUNAAN FDC YANG TERTERA DI ATAS. SAYA MENYETUJUI DAN MEMBERIKAN IZIN UNTUK TERKAIT SECARA SAH DENGAN PERSYARATAN DAN KETENTUAN TERSEBUT.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popupConfirm" class="popupConfirm position-fixed h-100" style="background-color: rgba(0, 0, 0, 0.8)">
+            <div style="border-radius: 8px" class="bg-light h-35 w-50 position-fixed confirmCancel top-50 start-50 translate-middle">
+                <div class="text-cancel">
+                    <h3>RS Pertamina Bina Medika</h3>
+                    <p>J4, Jl. Kyai Maja No.37B, RT.4/RW.8, Gunung, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12120</p>
+                    <label for="Tanggal">Pilih Tanggal:</label>
+                    <input type="date" id="Tanggal" name="Tanggal" />
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button onclick="confirmBtn()" class="btn btn-primary mx-auto">Konfirmasi</button>
+                </div>
+            </div>
+        </div>
+        <div id="popupThanks" class="popupThanks position-fixed h-100" style="background-color: rgba(0, 0, 0, 0.8)">
+            <div style="border-radius: 8px" class="bg-light h-35 w-50 position-fixed confirmCancel top-50 start-50 translate-middle">
+                <div class="text-cancel">Terimakasih telah melakukan konfirmasi. Silahkan datang sesuai dengan tempat dan waktu vaksin Anda dan jangan lupa taati prokes!</div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button onclick="confirmBtnthanks()" class="btn btn-primary mx-auto">OK</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                $("#includedContent").load("navbar.html");
+            });
+        </script>
+        <script>
+            $("#popupConfirm").hide();
+            $("#popupThanks").hide();
+
+            daftarVaksinBtn = () => {
+                $("body").addClass("overflow-hidden");
+                $("#popupConfirm").show();
+            };
+            confirmBtn = () => {
+                $("#popupConfirm").hide();
+                $("#popupThanks").show();
+            };
+            confirmBtnthanks = () => {
+                $("body").removeClass("overflow-hidden");
+                $("#popupThanks").hide();
+            };
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    </body>
+</html>
